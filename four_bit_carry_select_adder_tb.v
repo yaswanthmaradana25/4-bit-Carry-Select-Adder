@@ -36,6 +36,7 @@ module four_bit_carry_select_adder_tb();
             #10;
             if ({cout,s}!=a+b+cin) begin
                 $display("Error a=%0d , b=%0d , cin=%0d" , a,b,cin);
+                $stop;
             end
         end
         $display("All Test Cases Passed");
